@@ -1,0 +1,83 @@
+<!--pages/rank/rank.wxml-->
+<view class='rank-container'>
+  <image class='rank-bg-header' src='../../../images/zhou.png'></image>
+  <view class='rank-bg-content'>
+    <view class='rank-lastweek-list'>
+      <view class='tabs-items' bindtap="swichTbas">
+        <text class="{{span ? 'span' : ''}}">城市排行榜</text>     
+      </view>
+      <image src='../../../images/mo2@2x.png' class='ink'></image>
+      <view class='tabs-items' bindtap="swichTbas">
+        <text class="{{!span ? 'span' : ''}}">同城才子榜</text>   
+      </view> 
+     
+    </view>
+    <view class='this-week'>
+      <view class='this-week-title'>
+        <text>实时：{{time}}</text>
+      </view>
+      <view class='this-week-list'>
+        <view class='this-week-item'
+          wx:for="{{city}}"
+          wx:key="item"
+        >
+          <view class='item-photo'>
+            <image class='pic' src='{{item.headImgUrl}}'></image>
+          </view>
+          <view class='item-info'>
+            <view class='tv'>
+              <text>{{item.cityName}}</text>
+              <text>{{item.title}}</text>
+              <text>{{item.talentValue}}才气值</text>
+            </view>
+            <view class='intro'>
+              <view class='location'>
+                <image class='locationImg' src='../../../images/locationImg.png'></image>
+                <!-- 四川成都 -->
+                {{item.creationLocation}}
+              </view>
+              <view class='topic'>
+                <!-- 四川成都 -->
+                {{item.topic}}
+              </view>
+              <view class='rank'>{{item.rank}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+  <view class='fixed'>
+    <view class='this-week-list'>
+        <view class='this-week-item'>
+          <view class='item-photo'>
+            <image class='pic' src='../../../images/wx.png'></image>
+          </view>
+          <view class='item-info'>
+            <view class='tv'>
+              <text>{{my.cityName}}</text>
+              <text>{{my.title}}</text>
+              <text>{{my.talentValue}}才气值</text>
+            </view>
+            <view class='intro'>
+              <view class='location'>
+                <image class='locationImg' src='../../../images/locationImg.png'></image>
+                <!-- 四川成都 -->
+                {{my.creationLocation}}
+              </view>
+              <view class='topic'>
+                <!-- 四川成都 -->
+                {{my.topic}}
+              </view>
+              <view class='rank'>{{my.rank}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    <view class='share'>
+      <image class='share-icon' src='../../../images/share-icon.png'></image>
+      <text class=''>分享给好友</text>
+      <text class='jifen'>(成功可得30积分)</text>
+    </view>
+  </view>
+</view>

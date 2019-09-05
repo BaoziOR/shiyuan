@@ -1,0 +1,34 @@
+<template name="homeListTemplate">
+  <view class='homeCell'
+    wx:for="{{list}}" 
+    wx:for-item="item" 
+    wx:for-index="idx"
+    wx:key="item"
+  >
+    <view class='cell-header'>
+      <image src='{{item.headImgUrl}}'></image> 
+      <text class='cell-author'>{{item.nickName}}</text>
+      <text class='cell-topic'>#千山万水总是情</text>
+    </view>
+    <view class='cell-title'>{{item.title}}</view>
+    <view class='cell-content'>{{item.content}}</view>
+    <view class='cell-footer'>
+      <view class='cell-share'>
+        <image src='../../../images/fx@2x.png'></image>
+        <text>{{item.commentCount}}</text>
+      </view>
+      <view class='cell-collect'>
+        <image src='../../../images/love@2x.png'></image>
+        <text>{{item.likeCount}}</text>
+      </view>
+      <view 
+        class='cell-comment' 
+        catchtap='onClickCommentEvent' 
+        data-index='1'>
+        <image src='../../../images/pl@2x.png'></image>
+        <text>{{item.shareCount}}</text>
+      </view>
+    </view>
+    <view class='horizen'></view>
+  </view>
+</template>

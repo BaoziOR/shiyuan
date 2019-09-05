@@ -1,0 +1,10 @@
+<template name="likeRecordCell">
+  <view class="base-cell-view">
+      <view class='title-view'>
+        <text class='works-title'>苏三</text>
+        <text>喜欢了我的作品</text>
+        <text class='works-title'>《萧瑟》</text>
+      </view>
+    <view class='time-text'>2018-07-17 10:10:32</view>
+  </view>
+</template>

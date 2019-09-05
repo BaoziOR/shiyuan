@@ -1,0 +1,14 @@
+<template name="publishTopic">
+<view class='publish-topic-view'>
+<block wx:for="{{topicArray}}" wx:key="topicItem" wx:for-index="idx">
+  <block wx:if="{{topicIndex == idx}}">
+   <view class='topic-selected' bindtap="{{topicFn}}"  data-keyword="{{item}}">{{item}}
+   <image class='topic-check-image' src='../../../images/Check@2x.png' mode='aspectFit'></image>
+   </view>
+  </block>
+  <block wx:else>
+  <view class='topic-unselected' bindtap="{{topicFn}}" data-keyword="{{item}}">{{item}}</view>
+  </block>
+</block>
+</view>
+</template>

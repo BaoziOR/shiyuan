@@ -1,0 +1,76 @@
+<!--pages/mine/mine.wxml-->
+<view class="mine-container">
+
+<view class="mine-head">
+
+ <image class='head-bgImage' src='/images/mineTabHead.png'></image>
+  <view class='user-infoView' bindtap="goToPersonalDetail">
+    <image class='avatar' src='{{userInfo.headImgUrl}}'></image>
+    <view class='userName'>
+      <view class='gender'>
+        <text style='margin-right: 12rpx;'>{{userInfo.nickName}}</text>
+        <view 
+        class='iconfont icon-nan' 
+        style='color:blue'
+        wx:if="{{userInfo.sex == 'M'}}"></view>
+        <view 
+        class='iconfont icon-nv_nor'
+        style='color:red'
+        wx:if="{{userInfo.sex == 'W'}}"
+        ></view>
+      </view>
+      <text>dsdsasdasad</text>
+    </view>
+    <image class='left-arrow' src='../../images/arrowGray.png'></image>
+  </view>
+  <view class='property-view'>
+    <view class='talent-view'>
+      <text class='property-text'>才气值</text>
+      <text>{{userInfo.talentValue}}</text>
+    </view>
+    <view class='fans-view' bindtap='goFans'>
+      <text class='property-text'>粉丝</text>
+      <text>{{userInfo.fansCount}}</text>
+    </view>
+    <view class='follow-view' bindtap='goFollow'>
+      <text class='property-text'>关注</text>
+      <text>{{userInfo.followCount}}</text>
+    </view>
+  </view>
+<!--评论 喜欢按钮-->
+  <view class='event-view'>
+    <view style='margin-left: 18px;' bindtap='goRate'>
+      <image src='/images/comment.png'></image>评论
+    </view>
+    <view style='margin-left: 25px;' bindtap='goLike'>
+      <image src='/images/like.png'></image>喜欢
+    </view>
+  </view>
+
+</view>
+  
+<!--items-->
+<navigator url="../mine/collection/collection" hover-class="navigator-hover">
+<view class="my-item">我的收藏
+<image mode='aspectFit' src='/images/arrowGray.png'></image>
+</view>
+</navigator>
+
+<navigator url="../mine/collection/collection" hover-class="navigator-hover">
+<view class="my-item">我的浏览历史
+<image mode='aspectFit' src='/images/arrowGray.png'></image>
+</view>
+</navigator>
+
+<navigator url="../mine/feedback/feedback" hover-class="navigator-hover">
+<view class="my-item">我的反馈
+<image mode='aspectFit' src='/images/arrowGray.png'></image>
+</view>
+</navigator>
+
+
+<view class="my-item" bindtap='goSetting'>设置
+<image mode='aspectFit' src='/images/arrowGray.png'></image>
+</view>
+
+</view>

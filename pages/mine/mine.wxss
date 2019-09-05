@@ -1,0 +1,134 @@
+/* pages/mine/mine.wxss */
+page {
+  height: 100%;
+  width: 100%;
+  background-color: #f9f9f9;
+}
+.mine-container {
+  overflow: hidden;
+  overflow-y: hidden;
+}
+.mine-head {
+  display: flex;
+  flex-direction: column;
+}
+.user-infoView {
+  margin: 40px 20px 0 20px;
+}
+.head-bgImage {
+  width: 750rpx;
+  height: 360rpx;
+  z-index: -1;
+  position: absolute;
+}
+.avatar {
+  float: left;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+}
+.userName {
+  float: left;
+  margin-top: 13px;
+  display: flex;
+  flex-direction: column;
+  margin-left: 15px;
+}
+.userName text {
+  font-size: 11px;
+  line-height: 15px;
+}
+.gender text {
+  float: left;
+  line-height: 20px;
+  font-size: 18px;
+}
+.gender image {
+  width: 18px;
+  height: 18px;
+  margin-left: 5px;
+}
+
+.left-arrow {
+  float: right;
+  margin-top: 24px;
+  width: 15rpx;
+  height: 27rpx;
+}
+
+.property-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 15px 0 20px 0;
+}
+
+.property-view view text {
+  font-size: 15px;
+  color: #333;
+  line-height: 15px;
+  text-align: center;
+  margin-top: 5px;
+}
+
+.property-view view .property-text {
+  font-size: 11px;
+  color: #acacac;
+  line-height: 11px;
+  text-align: center;
+}
+
+.property-view view {
+  display: flex;
+  flex-direction: column;
+}
+
+.event-view {
+  height: 60px;
+  background: #f3f3f3;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.event-view view {
+  background-color: white;
+  border-radius: 5px;
+  color: #333;
+  font-size: 28rpx;
+  height: 40px;
+  width: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-view view image {
+  width: 15px;
+  height: 15px;
+  margin-right: 20rpx;
+}
+/*
+items
+*/
+.my-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  color: #000;
+  opacity: 0.9;
+  font-size: 32rpx;
+  border-bottom: 1rpx solid #eee;
+  height: 150rpx;
+  line-height: 150rpx;
+  padding-left: 32rpx;
+  background-color: white;
+}
+.my-item image {
+  width: 18rpx;
+  height: 33rpx;
+  padding-right: 64rpx;
+}

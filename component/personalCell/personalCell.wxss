@@ -1,0 +1,39 @@
+.cell-background-view {
+  background-color: #fff;
+  width: 686rpx;
+  margin-left: 32rpx;
+  margin-top: 1rpx;
+  margin-bottom: 1rpx;
+  min-height: 130rpx;
+  max-height: 190rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.cell-background-view  text {
+  font-size: 30rpx;
+  color: #000;
+  opacity: 0.9;
+  margin-left: 20rpx;
+  line-height: 130rpx;
+}
+
+.right-view {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 497rpx;
+  line-height: 130rpx;
+  text-align: left;
+  color: #000;
+  opacity: 0.6;
+  font-size: 36rpx;
+}
+
+.cell-background-view image {
+  margin-top: 63rpx;
+  margin-right: 20rpx;
+  height: 18rpx;
+  width: 18rpx;
+}

@@ -1,0 +1,7 @@
+<template name="commentsRecordCell">
+
+  <view class="comment-view">
+  
+  </view>
+
+</template>

@@ -1,0 +1,23 @@
+<!--pages/mine/rate/rate.wxml-->
+<view class='container rate'>
+   <view 
+    class='list'
+    wx:for="{{list}}"
+    wx:key="item"
+    wx:index="index"
+   >
+   
+   <view class='title'>
+      你评论了
+      <text style='color: #f4a4a2'>{{item.commentatorName}}</text>
+      的作品
+      <text style='color: #f4a4a2'>《{{item.title}}》</text>
+   </view>
+   <view class='content'>
+     {{item.commentContent}} 
+   </view>
+   <view class='time'>
+    {{item.createDate}}
+   </view>
+   </view>
+</view>

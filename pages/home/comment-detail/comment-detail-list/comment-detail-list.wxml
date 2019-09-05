@@ -1,0 +1,19 @@
+<template name="commentDetailListTemplate">
+  <view class='commentCell'>
+    <view class='detail-userInfo'>
+      <image src='../../../../images/love1@2x.png'></image>
+      <view class='detail-authorView'>
+        <text class='detail-author'>周杰伦</text>
+        <text class='detail-date'>5分前</text>
+      </view>
+      <view class='detail-praiseView'>
+        <image src='../../../../images/love1@2x.png'></image>
+        <text>12</text>
+      </view>
+    </view>
+    <view class='detail-comment'>
+      <text>我们常常看到的风景是：一个人总是仰望和羡慕着别人的幸福，一回头，却发现自己正被仰望和羡慕着。其实，每个人都是幸福的。只是，你的幸福，常常在别人眼里 。</text>
+    </view>
+    <view class='horizon'></view>
+  </view>
+</template>

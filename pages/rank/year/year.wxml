@@ -1,0 +1,127 @@
+<!--pages/rank/rank.wxml-->
+<view class='rank-container'>
+  <image class='rank-bg-header' src='../../../images/zhou.png'></image>
+  <view class='rank-bg-content'>
+    <view class='rank-lastweek-list'>
+      <image class='banner-img' src='../../../images/banner.jpg'></image>
+    </view>
+    <view class='this-week'>
+      <view class='this-week-title'>
+        <text>实时：{{time}}</text>
+      </view>
+      <view class='this-week-list'>
+        <view class='this-week-item'
+          wx:for="{{city}}"
+          wx:key="item"
+        >
+          <view class='item-photo'>
+            <image class='pic' src='../../../images/wx.png'></image>
+          </view>
+          <view class='item-info'>
+            <view class='tv'>
+              <text>{{item.cityName}}</text>
+              <text>{{item.title}}</text>
+              <text>{{item.talentValue}}才气值</text>
+            </view>
+            <view class='intro'>
+              <view class='location'>
+                <image class='locationImg' src='../../../images/locationImg.png'></image>
+                <!-- 四川成都 -->
+                {{item.creationLocation}}
+              </view>
+              <view class='topic'>
+                <!-- 四川成都 -->
+                {{item.topic}}
+              </view>
+              <view class='rank'>{{item.rank}}</view>
+            </view>
+          </view>
+        </view>
+        <!-- <view class='this-week-item'>
+          <view class='item-photo'>
+            <image class='pic' src='../../images/photo.png'></image>
+          </view>
+          <view class='item-info'>
+            <view class='tv'>
+              <text>天蚕土豆</text>
+              <text class='values'>7200才气值</text>
+            </view>
+            <view class='intro'>
+              <view class='location'><image class='locationImg' src='../../images/locationImg.png'></image>四川成都</view>
+              <view class='topic'>四川成都</view>
+              <view class='rank'>1</view>
+            </view>
+          </view>
+        </view> -->
+        <!-- <view class='this-week-item'>
+          <view class='item-photo'>
+            <image class='pic' src='../../images/photo.png'></image>
+          </view>
+          <view class='item-info'>
+            <view class='tv'>
+              <text>天蚕土豆</text>
+              <text class='values'>7200才气值</text>
+            </view>
+            <view class='intro'>
+              <view class='location'><image class='locationImg' src='../../images/locationImg.png'></image>四川成都</view>
+              <view class='topic'>四川成都</view>
+              <view class='rank'>1</view>
+            </view>
+          </view>
+        </view> -->
+        <!-- <view class='this-week-item'>
+          <view class='item-photo'>
+            <image class='pic' src='../../images/photo.png'></image>
+          </view>
+          <view class='item-info'>
+            <view class='tv'>
+              <text>天蚕土豆</text>
+              <text class='values'>7200才气值</text>
+            </view>
+            <view class='intro'>
+              <view class='location'><image class='locationImg' src='../../images/locationImg.png'></image>四川成都</view>
+              <view class='topic'>四川成都</view>
+              <view class='rank'>1</view>
+            </view>
+          </view>
+        </view> -->
+      </view>
+    </view>
+  </view>
+  <view class='fixed'>
+    <view class='this-week-list'>
+        <view class='this-week-item'
+          wx:for="{{city}}"
+          wx:key="item"
+        >
+          <view class='item-photo'>
+            <image class='pic' src='../../../images/wx.png'></image>
+          </view>
+          <view class='item-info'>
+            <view class='tv'>
+              <text>{{item.cityName}}</text>
+              <text>{{item.title}}</text>
+              <text>{{item.talentValue}}才气值</text>
+            </view>
+            <view class='intro'>
+              <view class='location'>
+                <image class='locationImg' src='../../../images/locationImg.png'></image>
+                <!-- 四川成都 -->
+                {{item.creationLocation}}
+              </view>
+              <view class='topic'>
+                <!-- 四川成都 -->
+                {{item.topic}}
+              </view>
+              <view class='rank'>{{item.rank}}</view>
+            </view>
+          </view>
+        </view>
+      </view>
+    <view class='share'>
+      <image class='share-icon' src='../../../images/share-icon.png'></image>
+      <text class=''>分享给好友</text>
+      <text class='jifen'>(成功可得30积分)</text>
+    </view>
+  </view>
+</view>

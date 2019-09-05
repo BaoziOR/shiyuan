@@ -1,0 +1,48 @@
+<import src="../../../component/publishNullTip/publishNullTip.wxml"/>
+<import src="../../../component/publishTopic/publishTopic.wxml"/>
+<import src="../../../component/publishLocation/publishLocation.wxml"/>
+
+
+<view class='publish-view'>
+
+<view class='publish-tag-title'>选择本周话题<text class='publish-mark'>*</text></view>
+<template is="publishTopic" data="{{topicArray : topicArray, topicIndex : topicIndex, topicFn : topicFn}}"></template>
+
+<view class='publish-tag-title'>输入内容<text class='publish-mark'>*</text></view>
+<view class="publish-content-view">
+<input type='text' class='place-content-input' placeholder-style="color:rgba(0, 0, 0, 0.6)" placeholder='' maxlength='12' bindinput='publishTitleChangeEvent'><text class='publish-title-tip'>{{publishTitleTip}}</text><text class='publish-subtitle-tip'>{{publishSubtitleTip}}</text>
+</input>
+<view class='publush-title-line'></view>
+<textarea class='publish-content-textarea' placeholder='请输入正文...' placeholder-style='color:rgba(0, 0, 0, 0.6)' maxlength='200'></textarea>
+<view class="publish-content-textarea-Tip">（限10～200字符）</view>
+</view>
+
+<view class='publish-tag-title'>上传封面<text class='publish-tag-subtitle'>（封面越贴近作品内容，会被更多人欣赏）</text></view>
+<view class='publish-cover-view'>
+<block wx:if="{{coverArray.length == 0}}">
+<template is="publishNullTip" data="{{fn : fn}}"></template>
+</block>
+<block wx:else>
+<image class='publish-cover-image' mode='aspectFill' src='{{coverArray[0]}}' bindtap='previewImageEvent'></image>
+<text class='publish-tip-view' bindtap='{{fn}}'>点击\n换图片</text>
+</block>
+</view>
+
+<view class='publish-tag-title'>添加标签 <text class='publish-tag-subtitle'>（添加标签有助于被更多人欣赏到）</text></view>
+<block wx:for="{{tagsArray}}" wx:key="publishTagItem" wx:for-index="idx">
+    <block wx:if="{{idx == indexTag}}">
+    <view class="publish-tag-selected-item" data-keyword="{{item}}" bindtap="selectedByTag">{{item}}</view>
+   </block>
+   <block wx:else>
+    <view class="publish-tag-item" data-keyword="{{item}}" bindtap="selectedByTag">{{item}}</view>
+   </block>
+</block>
+
+<template is="publishLocation"></template>
+
+<view class='publish-preview-view'>
+<view>预览</view>
+<image mode='aspectFit' src='../../../img/mo1@2x.png' class="publish-mo-image"></image>
+<view bindtap="submitReleaseEvent">发布</view>
+</view>
+</view>

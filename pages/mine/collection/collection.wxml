@@ -1,0 +1,48 @@
+<!--pages/mine/collection/collection.wxml-->
+<view class='container rate'>
+   <view 
+    class='list'
+    wx:for="{{list}}"
+    wx:key="item"
+    wx:index="index"
+   >
+   
+   <view class='top'>
+    <view class='head-phone'>
+      
+    </view>
+    <view class='name'>
+      名字
+    </view>
+   </view>
+
+   <view class='content'>
+    <view class='content-title'>
+      mingz
+    </view>
+    <view class='content-text'>
+      neir
+    </view>
+   </view>
+
+   <view class='more'>
+    <view class='more-item'>
+      <view class='item'>
+        <image src='../../../images/pl@2x.png' class='image'></image>
+        评论
+      </view>
+      <view class='item'>
+        <image src='../../../images/love@2x.png' class='image'></image>
+        关注
+      </view>
+      <view class='item'>
+        <image src='../../../images/fx@2x.png' class='image'></image>
+        分享
+      </view>
+    </view>  
+   </view>
+   
+  
+   </view>
+</view>
+

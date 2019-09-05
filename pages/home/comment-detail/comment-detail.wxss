@@ -1,0 +1,30 @@
+@import "comment-detail-list/comment-detail-list.wxss";
+
+.detail-footer {
+  height:8%;
+  background:#F4F4F4; 
+  padding: 16rpx; 
+  display: flex; 
+  position: fixed; 
+  bottom: 0;
+  width: 100%;
+  box-sizing: border-box; 
+}
+
+.detail-footer input {
+  background: white;
+  font-size: 13px;
+  width: 80%;
+}
+
+.detail-button {
+  color: white;
+  background: #f3f3f3;
+  font-size: 13px;
+}
+
+.detail-button.commit {
+  color: white;
+  background: black;
+  font-size: 13px;
+}

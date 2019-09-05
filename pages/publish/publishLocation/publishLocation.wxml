@@ -1,0 +1,7 @@
+<template name="publishLocation">
+<view class='location-background-view'>
+  <image mode='aspectFit' src='../../../images/check2@2x.png' class="location-checked-image"></image>
+  <text>上海市.桂林路321号</text>
+  <image mode='aspectFit' src='../../../images/dingwei@2x.png' class="location-location-image"></image>
+</view>
+</template>

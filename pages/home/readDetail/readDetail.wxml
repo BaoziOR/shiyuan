@@ -1,0 +1,8 @@
+<scroll-view scroll-x="false" scroll-y="true" class='base-scroll-view'>
+  <scroll-view scroll-x="false" scroll-y="true" class='scroll-views'>
+      <text class='content-text'>{{text}}</text>
+  </scroll-view>
+  <scroll-view scroll-x="false" scroll-y="true" class='scroll-views'>
+        <image src="{{testUrl}}" mode='scaleToFill' style="width: 750rpx; height: 31625rpx"></image>
+   </scroll-view>
+</scroll-view>

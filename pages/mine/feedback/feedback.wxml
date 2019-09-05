@@ -1,0 +1,22 @@
+<!--pages/mine/feedback/feedback.wxml-->
+<view class='container feedback'>
+  <view class='rich-box'>
+    <view class='rich-content'>
+      <textarea 
+        maxlength='300'
+        placeholder='{{placeholder}}'
+        bindinput="changeState"
+      >
+      </textarea>
+    </view>
+    
+    <view class='rich-bottom'>
+      (不多余{{totalText}}字)
+    </view>
+  </view>
+  <view class='submit'>
+    <button 
+    type="primary" 
+    bindtap="submit">提交</button>
+  </view>
+</view>

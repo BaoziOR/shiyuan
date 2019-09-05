@@ -1,0 +1,5 @@
+<template name="publishNullTip">
+<view class='publishNullView' bindtap="{{fn}}">
+<image class='nullTipImage' src='../../../images/camera@2x.png' mode='aspectFit'></image>
+</view>
+</template>

@@ -1,0 +1,147 @@
+<!--pages/rank/rank.wxml-->
+<view class='rank-container'>
+  <image class='rank-bg-header' src='../../../images/zhou.png'></image>
+  <view class='rank-bg-content'>
+    <view class='lastweek'>上周冠军</view>
+    <view class='rank-lastweek-list'>
+      <view class='rank-lastweek-item'
+        wx:for="{{lastWeek}}"
+        wx:key="item"
+      >
+        <view class='rank-lw-item-title'>
+          <text class='no'>{{item.rank}}</text>
+          <text class='name'>{{item.nickName}}</text>
+        </view>
+        <view class='rank-lw-item-photo'>
+          <!-- <image class='photo' src='{{item.headImgUrl}}'></image> -->
+        </view>
+      </view>
+      <!-- <view class='rank-lastweek-item'>
+        <view class='rank-lw-item-title'>
+          <text class='no'>2</text>
+          <text class='name'>苏小妹</text>
+        </view>
+        <view class='rank-lw-item-photo'>
+          <image class='photo' src='../../images/photo.png'></image>
+        </view>
+      </view> -->
+      <!-- <view class='rank-lastweek-item'>
+        <view class='rank-lw-item-title'>
+          <text class='no'>3</text>
+          <text class='name'>苏小妹</text>
+        </view>
+        <view class='rank-lw-item-photo'>
+          <image class='photo' src='../../images/photo.png'></image>
+        </view>
+      </view> -->
+    </view>
+    <view class='this-week'>
+      <view class='this-week-title'>
+        <text>本周</text>
+        <text class='time'>实时：{{time}}</text>
+      </view>
+      <view class='this-week-list'>
+        <view class='this-week-item'
+          wx:for="{{week}}"
+          wx:key="item"
+        >
+          <view class='item-photo'>
+            <!-- <image class='pic' src='{{item.headImgUrl}}'></image> -->
+          </view>
+          <view class='item-info'>
+            <view class='tv'>
+              <text>{{item.title}}</text>
+              <text class='values'>{{item.talentValue}}才气值</text>
+            </view>
+            <view class='intro'>
+              <view class='location'>
+                <image class='locationImg' src='../../images/locationImg.png'></image>
+                <!-- 四川成都 -->
+                {{item.creationLocation}}
+              </view>
+              <view class='topic'>
+                <!-- 四川成都 -->
+                {{item.topic}}
+              </view>
+              <view class='rank'>{{item.rank}}</view>
+            </view>
+          </view>
+        </view>
+        <!-- <view class='this-week-item'>
+          <view class='item-photo'>
+            <image class='pic' src='../../images/photo.png'></image>
+          </view>
+          <view class='item-info'>
+            <view class='tv'>
+              <text>天蚕土豆</text>
+              <text class='values'>7200才气值</text>
+            </view>
+            <view class='intro'>
+              <view class='location'><image class='locationImg' src='../../images/locationImg.png'></image>四川成都</view>
+              <view class='topic'>四川成都</view>
+              <view class='rank'>1</view>
+            </view>
+          </view>
+        </view> -->
+        <!-- <view class='this-week-item'>
+          <view class='item-photo'>
+            <image class='pic' src='../../images/photo.png'></image>
+          </view>
+          <view class='item-info'>
+            <view class='tv'>
+              <text>天蚕土豆</text>
+              <text class='values'>7200才气值</text>
+            </view>
+            <view class='intro'>
+              <view class='location'><image class='locationImg' src='../../images/locationImg.png'></image>四川成都</view>
+              <view class='topic'>四川成都</view>
+              <view class='rank'>1</view>
+            </view>
+          </view>
+        </view> -->
+        <!-- <view class='this-week-item'>
+          <view class='item-photo'>
+            <image class='pic' src='../../images/photo.png'></image>
+          </view>
+          <view class='item-info'>
+            <view class='tv'>
+              <text>天蚕土豆</text>
+              <text class='values'>7200才气值</text>
+            </view>
+            <view class='intro'>
+              <view class='location'><image class='locationImg' src='../../images/locationImg.png'></image>四川成都</view>
+              <view class='topic'>四川成都</view>
+              <view class='rank'>1</view>
+            </view>
+          </view>
+        </view> -->
+      </view>
+    </view>
+  </view>
+  <view class='fixed'>
+    <view class='mine'>
+      <view class='mine-photo'>
+        <image src='{{myWeek.headImgUrl}}'></image>
+      </view>
+      <view class='mine-achi'>
+        <view class='mine-achi-info'>
+          <view class='forme'>{{myWeek.nickName}}</view>
+          <view class='release'>
+            发表作品
+          </view>
+        </view>
+        <view class='mine-location'>
+          <view class='location'><image class='locationImg' src='../../../images/locationImg.png'></image>{{myWeek.creationLocation}}</view>
+          <view class='my-stict'>
+            {{myWeek.title ? myWeek.title : '您还没有发表作品'}}
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class='share'>
+      <image class='share-icon' src='../../../images/share-icon.png'></image>
+      <text class=''>分享给好友</text>
+      <text class='jifen'>(成功可得30积分)</text>
+    </view>
+  </view>
+</view>

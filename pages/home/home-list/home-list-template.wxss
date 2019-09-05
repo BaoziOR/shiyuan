@@ -1,0 +1,112 @@
+.homeCell {
+  display: flex;
+  flex-direction: column;
+  padding: 24rpx 24rpx 0rpx 24rpx;
+  border-bottom: 2rpx solid #ddd;
+}
+
+.cell-header {
+  padding: 0;
+  vertical-align: middle;
+  line-height: 40px;
+}
+
+.cell-header image {
+  float: left;
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 100%;
+  vertical-align: middle;
+}
+
+.cell-author {
+  margin-left: 10px;
+  margin-top: 5px;
+  font-size: 15px;
+  color: #000;
+}
+
+.cell-topic {
+  margin-top: 5px;
+  float: right;
+  font-size: 15px;
+  color: #acacac;
+}
+
+.cell-title {
+  margin-top: 20px;
+  font-size: 18px;
+  color: #333;
+  font-weight: bold;
+  font-family: SIL-Kai-Reg-Jian;
+}
+
+.cell-content {
+  margin-top: 15px;
+  font-size: 16px;
+  color: #333;
+}
+
+.cell-footer {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: row-reverse;
+}
+
+.cell-share {
+  padding-right: 15px;
+}
+
+.cell-share image {
+  width: 30rpx;
+  height: 29rpx;
+  opacity: 0.6;
+  vertical-align: middle;
+}
+
+.cell-share text {
+  font-size: 26rpx;
+  color: #000;
+  opacity: 0.6;
+  margin-left: 6px;
+  vertical-align: middle;
+}
+
+.cell-collect {
+  margin-right: 40rpx;
+}
+
+.cell-collect image {
+  width: 32rpx;
+  height: 29rpx;
+  opacity: 0.6;
+  vertical-align: middle;
+}
+
+.cell-collect text {
+  font-size: 26rpx;
+  margin-left: 6px;
+  vertical-align: middle;
+  color: #000;
+  opacity: 0.6;
+}
+
+.cell-comment {
+  margin-right: 40rpx;
+}
+
+.cell-comment image {
+  width: 34rpx;
+  height: 29rpx;
+  opacity: 0.6;
+  vertical-align: middle;
+}
+
+.cell-comment text {
+  font-size: 26rpx;
+  margin-left: 6px;
+  vertical-align: middle;
+  color: #000;
+  opacity: 0.6;
+}

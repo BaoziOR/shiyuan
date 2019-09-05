@@ -1,0 +1,10 @@
+<template name="personalCell">
+<view class='cell-background-view'>
+
+  <text>{{item.title}}</text>
+  <view class='right-view' data-keyword="{{item.title}}" bindtap='modifyDataEvent' style='{{item.title == "我的签名" ? "line-height: 50rpx; margin-top: 45rpx; margin-bottom: 45rpx;" : ""}}'>{{item.subTitle}}
+    <image mode='aspectFit' hidden='{{(item.title == "昵称" || item.title == "我的签名") ? true : false}}' class="mark-image" src='../../../images/sanjiao@2x.png'></image>
+  </view>
+  
+</view>
+</template>

@@ -1,0 +1,45 @@
+<import src="home-list/home-list-template.wxml" />
+<view class='home-header'>
+  <view class="topic" bindtap='goPublish'>
+    <image class='bi' src='../../images/bi.png'></image>
+  </view>
+
+  <image class='header-bgImage' src='../../images/bj@2x.png'></image>
+  <view class='topic-week'>
+    <text bindtap='goToApply'>本周话题</text>
+    <image src='../../images/right3.png'></image>
+  </view>
+  <view class='focus-topic-view'>
+     <text  class="{{currentTitleItem==index?'active-bg':''}}" 
+     wx:for="{{list}}" 
+      wx:for-item="item" 
+      wx:key="item"
+      wx:for-index="index" 
+      data-idx="{{index}}"
+      catchtap="onTitleTap">#{{item.title}}</text>
+  </view>
+  <view class='topic-kind-view'>
+    <view class='topic-center-view'>
+      <view class="kind-view {{currentTopItem==index?'active':''}}" 
+      catchtap="onKindTap"
+      wx:for="{{topic}}" 
+      wx:for-item="item" 
+      wx:key="item"
+      wx:for-index="index" data-idx="{{index}}">
+        <text>{{item.title}}</text>
+        <view class="topic-image {{item.title == '美女'?'hidden':''}}">
+          <image wx:if="{{currentTopItem==index}}" src='../../images/mo1@2x.png'></image>
+          <image wx:else src='../../images/mo2@2x.png'></image>
+        </view>
+      </view>
+    </view>
+  </view>
+  <block>
+    <view class='home-template'>
+      <template is="homeListTemplate" data="{{list}}" />
+    </view>
+  </block>
+  <view class='more' wx:if="{{loadState}}">
+    {{loadText}}
+  </view>
+</view>

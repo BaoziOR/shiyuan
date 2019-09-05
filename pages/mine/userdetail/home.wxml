@@ -1,0 +1,64 @@
+<!--pages/home/home.wxml-->
+<import src="../../../component/worksListCell/worksListCell.wxml"/>
+
+<view class="container-view">
+  <view class="userInfo-view" bindtap="goToPersonalPageEvent">
+
+   <view class='person-view'>
+     <image src='{{headUrl}}' mode='aspectFill'></image>
+     <view class='person-child-view'>
+       <view class='name-view'>
+         <text class='name-text'>纳兰容若</text>
+         <image src='../../../images/unlikeed.png' ></image>
+       </view>
+       <view class='id-view'>才子ID：347982</view>
+       
+     </view>
+   </view>
+   <!--------属性值------>
+    <view class='attribute-view'>
+      <view class='data-view'>
+        <text class='top-text'>才气值</text>
+        <text class='bottom-text'>5230</text>
+      </view>
+      <view class='data-view'>
+        <text class='top-text'>粉丝</text>
+        <text class='bottom-text'>5230</text>
+      </view>
+      <view class='data-view'>
+        <text class='top-text'>关注</text>
+        <text class='bottom-text'>5230</text>
+      </view>
+    </view>
+  </view>
+  <!--选项卡 -->
+  <view class='tabs-view' bindtap="getTabsInfo">
+    <view class="tab {{currentIndex==0?'active':''}}" data-index="0" bindtap="switchTab">我的作品</view>
+    <image class='tab-vertical' mode='aspectFit' src="../../../images/verticalInk.png" style=' width: 13rpx; height: 45rpx; margin: 0 48rpx;'></image>
+    <view class="tab {{currentIndex==1?'active':''}}" data-index="1" bindtap="switchTab">我喜欢的</view>
+  </view>
+
+  <!--------scrollview-------->
+  <swiper class="swiper" current="{{currentIndex}}" duration="300" bindchange="bindChange" style="height:{{swiperHeight}}px">
+
+    <!----我的作品--->
+    <swiper-item>
+      <scroll-view class='scrollView' scroll-y="true" bindscrolltolower="loadMoreData">
+        <block wx:for="{{[1,2,3,4,5,6]}}" wx:for-index="idx" wx:key="item">
+        <template is="worksListCell" data="{{title:'游山西村', sub_title: '莫笑农家腊酒浑，丰年留客足鸡豚。'}}" />
+        </block>
+      </scroll-view>
+    </swiper-item>
+
+    <!----我喜欢的------>
+    <swiper-item>
+      <scroll-view class='scrollView' scroll-y="true" bindscrolltolower="loadMoreData">
+        <block wx:for="{{[1,2,3,4]}}" wx:for-index="idx" wx:key="item">
+        <template is="worksListCell" data="{{title:'我喜欢的', sub_title: '莫笑农家腊酒浑，丰年留客足鸡豚。'}}" />
+        </block>
+      </scroll-view>
+    </swiper-item>
+
+  </swiper>
+
+</view>

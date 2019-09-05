@@ -1,0 +1,19 @@
+<!--pages/mine/rate/rate.wxml-->
+<view class='container like'>
+   <view 
+    class='list'
+    wx:for="{{list}}"
+    wx:key="item"
+    wx:index="index"
+   >
+   <view class='content'>
+      <text style='color: #f4a4a2'>{{item.likeName}}</text>
+      喜欢了我的作品
+      <text style='color: #f4a4a2'>《{{item.title}}》</text>
+   </view>
+   <view class='time'>
+    {{item.createDate}}
+   </view>
+  
+   </view>
+</view>

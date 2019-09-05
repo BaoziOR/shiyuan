@@ -1,0 +1,32 @@
+.publish-topic-view {
+  background-color: #EAEAEA;
+  height: 350rpx;
+}
+
+.topic-selected {
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  background-color: #fff;
+  margin: 20rpx 32rpx 20rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+  border: 6rpx solid rgba(0, 0, 0, 0.9);
+  border-style: none none none solid;
+}
+.topic-unselected {
+  font-size: 28rpx;
+  color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+  background-color: #fff;
+  margin: 20rpx 32rpx 20rpx;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.topic-check-image {
+  position: absolute;
+  right: 63rpx;
+  width: 46rpx;
+  height: 33rpx;
+  margin-top: 28.5rpx;
+}

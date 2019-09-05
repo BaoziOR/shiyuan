@@ -1,0 +1,22 @@
+/* pages/mine/like/like.wxss */
+.like {
+  width: 100vw;
+  padding: 24rpx 0;
+}
+.list {
+  width: 88%;
+  height: 160rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 0 24rpx;
+  margin: 0 auto 24rpx auto;
+}
+.content {
+  padding: 24rpx;
+  flex: 1;
+}
+.time {
+  text-align: right;
+  margin-bottom: 24rpx;
+}

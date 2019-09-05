@@ -1,0 +1,18 @@
+<view class="rank-content">
+  <!-- <image class='header-bgImage' mode='aspectFill' src="{{rankBackgroundUrl}}"></image> -->
+  <image class='header-bgImage' mode='aspectFill' src="../../images/banner.png"></image>
+
+  <view class='rank-cell' data-keyword="本周" bindtap='didSelectItem'>
+    <text>本周才子榜</text>
+    <image src='../../images/arrowGray.png'></image>
+  </view>
+  <view class='rank-cell' data-keyword="城市" bindtap='didSelectItem'>
+    <text>城市才子榜</text>
+    <image src='../../images/arrowGray.png'></image>
+  </view>
+  <view class='rank-cell' data-keyword="年度" bindtap='didSelectItem'>
+    <text>年度才子榜</text>
+    <image src='../../images/arrowGray.png'></image>
+  </view>
+
+</view>

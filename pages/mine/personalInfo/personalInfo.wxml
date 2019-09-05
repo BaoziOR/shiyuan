@@ -1,0 +1,49 @@
+<!--pages/mine/personalInfo/personalInfo.wxml-->
+<view class="bottom-view">
+<form bindsubmit="formSubmit">
+<view class="head-view">
+  <text>点击更换头像</text>
+  <image mode='aspectFill' src='{{userInfo.personalHeadUrl}}' bindtap="changeHeadImageEvent"></image>
+</view>
+
+<view class="cell-background-view">
+  <text>昵称</text>
+  <view class='cell-right-view' data-keyword="昵称">
+    <input bindinput="nickNameChange" type='text' placeholder="请输入昵称" value='{{userInfo.userName}}' name="userName"/>
+  </view>
+</view>
+<view class="cell-background-view" bindtap=''>
+  <text>性别</text>
+  <view class='cell-right-view' data-keyword="">
+    <picker class='cell_right_picker' bindchange='bindSexPickerChange' value="{{userInfo.sexIndex}}" range="{{sexArray}}" name='sex'>
+    <text >{{sexArray[userInfo.sexIndex]}}</text>
+    </picker>
+    <image src='../../../images/triangle.png'></image>
+  </view>
+</view>
+
+<view class="cell-background-view" bindtap=''>
+  <text>我的地区</text>
+  <view class='cell-right-view' data-keyword="">
+    <!-- <picker class='cell_right_picker' bindchange='bindSexPickerChange' value="{{sexIndex}}" range="{{sexArray}}">
+    <text>{{sexArray[sexIndex]}}</text>
+    </picker> -->
+     <input bindinput="nickAreaChange" type='text' placeholder="请输入地区" value='{{userInfo.address}}' name="address"/>
+    <image src='../../../images/triangle.png'></image>
+  </view>
+</view>
+
+<view class="cell-background-view" bindtap=''>
+  <text>我的签名</text>
+  <view class='cell-right-view' data-keyword="">
+    <!-- <picker class='cell_right_picker' bindchange='bindSexPickerChange' value="{{sexIndex}}" range="{{sexArray}}">
+    <text>{{sexArray[sexIndex]}}</text>
+    </picker> -->
+    <input bindinput="nickSignChange" type='text' placeholder="请输入签命" value='{{userInfo.motto}}' name="motto"/>
+    <image src='../../../images/triangle.png'></image>
+  </view>
+</view>
+<!-- <view class='save-view'  formType="submit">保存</view> -->
+ <button  class='save-view' formType="submit">保存</button>
+</form>
+</view>

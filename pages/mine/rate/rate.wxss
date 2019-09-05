@@ -1,0 +1,23 @@
+/* pages/mine/fans/fans.wxss */
+.rate {
+  width: 100vw;
+  padding: 24rpx 0;
+}
+.list {
+  width: 88%;
+  min-height: 120rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 24rpx;
+  margin: 0 auto 24rpx auto;
+}
+.title-item {
+  color: #f4a4a2,
+}
+.content {
+  padding: 24rpx;
+}
+.time {
+  text-align: right;
+}

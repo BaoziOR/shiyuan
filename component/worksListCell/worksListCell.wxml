@@ -1,0 +1,23 @@
+<!--component/worksListCell/worksListCell.wxml-->
+<template name="worksListCell"> 
+
+  <view class='bg_bottom_view'>
+    <view class='title_view'>{{title}}</view>
+    <view class='subTitle_view'>{{sub_title}}</view>
+    <view class='optiaon_view'>
+      <view class='button_view'>
+        <image src='../../../images/comment.png' mode='aspectFit'></image>
+        <text>888</text>
+      </view>
+      <view class='button_view'>
+        <image src='../../../images/unlikeed.png' mode='aspectFit'></image>
+        <text>888</text>
+      </view>
+      <view class='button_view'>
+        <image src='../../../images/shareWhite.png' mode='aspectFit'></image>
+        <text>888</text>
+      </view>
+
+    </view>
+  </view>
+</template>

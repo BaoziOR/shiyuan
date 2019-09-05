@@ -1,0 +1,66 @@
+.bg_bottom_view {
+  background-color: #fff;
+  width: 686rpx;
+  height: 300rpx;
+  margin: 0 32rpx;
+
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  position: relative;
+}
+.bg_bottom_view:after {
+    content: " ";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: 1px;
+    border-bottom: 1px solid #E5E5E5;
+    color: #E5E5E5;
+    -webkit-transform-origin: 0 100%;
+    transform-origin: 0 100%;
+    -webkit-transform: scaleY(0.5);
+    transform: scaleY(0.5);
+}
+.title_view {
+  color: #000;
+  opacity: 0.9;
+  font-size: 36rpx;
+  font-family: "SIL-Kai-Reg-Jian";
+  margin: 54rpx 50rpx 27rpx;
+}
+.subTitle_view {
+  font-size: 32rpx;
+  font-family: "SIL-Kai-Reg-Jian";
+  color: #000;
+  opacity: 0.7;
+  margin: 0 50rpx;
+}
+.optiaon_view {
+  margin-left: 50rpx;
+  margin-top: 72rpx;
+  width: 400rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.button_view {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+.button_view image {
+  width: 34rpx;
+  height: 34rpx;
+}
+.button_view text {
+  color: #000;
+  opacity: 0.6;
+  font-size: 26rpx;
+  font-family: "PingFangSC-Regular";
+  margin-left: 13rpx;
+}

@@ -1,0 +1,58 @@
+/* pages/mine/collection/collection.wxss */
+.rate {
+  width: 100vw;
+  padding: 24rpx 0;
+  background-color: #fff;
+}
+.list {
+  width: 88%;
+  height: 380rpx;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding: 24rpx;
+  margin: 0 auto 24rpx auto;
+  border-bottom: 2rpx solid #ddd;
+}
+.top {
+  display: flex;
+  align-items: center;
+}
+.top .head-phone {
+  width: 100rpx;
+  height: 100rpx;
+  background-color: #000;
+  border-radius: 100%;
+  margin-right: 24rpx;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+}
+.content .content-title {
+  height: 100rpx;
+  line-height: 100rpx;
+}
+.content .content-text {
+  min-height: 140rpx;
+}
+
+.more {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.more .more-item {
+  display: flex;
+}
+
+.more .more-item .item {
+  margin-right: 36rpx;
+  display: flex;
+  align-items: center;
+}
+.more .more-item .item .image {
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 12rpx;
+}

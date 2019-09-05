@@ -1,0 +1,17 @@
+.publishNullView {
+  position: absolute;
+  background-color: #eeeeee;
+  width: 110rpx;
+  height: 110rpx;
+  background-position: center;
+  margin: 45rpx 288rpx;
+}
+
+.nullTipImage {
+  position: absolute;
+  width: 42rpx;
+  height: 34rpx;
+  background-repeat: no-repeat;
+  background-origin: center;
+  margin: 38rpx 34rpx;
+}

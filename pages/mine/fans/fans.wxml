@@ -1,0 +1,30 @@
+<!--pages/mine/fans/fans.wxml-->
+<view class='container fans'>
+  <view 
+    wx:for="{{list}}"
+    wx:key="item"
+    wx:index="index"
+    class='list'
+  >
+    <view class='head-phone'>
+      <image src='{{item.headImgUrl}}' class='image'></image>
+    </view>
+    <view class='name'>
+      {{item.nickName}}
+    </view>
+    <view class="switch">
+        <view>
+          <switch 
+            checked="{{item.followStatus}}" 
+            bindchange="switchChange"
+            disabled="{{state}}"
+            />
+        </view>      
+        <view>
+          {{item.followStatus ? '已关注' : '未关注'}}
+        </view>
+    </view>
+
+  </view>
+</view>
+

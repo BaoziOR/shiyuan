@@ -1,0 +1,54 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/publish/publishedInfo/publishedInfo",
+    "pages/mine/mine",
+    "pages/mine/personalInfo/personalInfo",
+    "pages/authorize/authorize",
+    "pages/rank/rank",
+    "pages/rank/detailRank/detailRank",
+    "pages/rank/city/city",
+    "pages/rank/year/year",
+    "pages/logs/logs",
+    "pages/mine/collection/collection",
+    "pages/mine/follow/follow",
+    "pages/mine/rate/rate",
+    "pages/mine/like/like",
+    "pages/mine/feedback/feedback",
+    "pages/mine/fans/fans",
+    "pages/mine/userdetail/home"
+
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "WeChat",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#7E8389",
+    "selectedColor": "#333333",
+    "backgroundColor": "#f7f7f7",
+    "borderStyle": "white",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "images/homeUnselected.png",
+        "selectedIconPath": "images/homeSelected.png"
+      },
+      {
+        "pagePath": "pages/rank/rank",
+        "text": "排行榜",
+        "iconPath": "images/rankUnselected.png",
+        "selectedIconPath": "images/rankSelected.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我",
+        "iconPath": "images/mineUnselected.png",
+        "selectedIconPath": "images/mineSelected.png"
+      }
+    ]
+  }
+}

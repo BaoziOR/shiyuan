@@ -1,0 +1,10 @@
+<import src="comment-detail-list/comment-detail-list.wxml" />
+<view>
+  <view wx:for="{{6}}" wx:for-index="{{index}}" wx:for-item="{{item}}">
+    <template is="commentDetailListTemplate" />
+  </view>
+</view>
+  <view class='detail-footer'>
+    <input placeholder="这是一个可以自动聚焦的input" auto-focus bindinput="onBindInputValueEvent"/>
+     <button class= "detail-button {{hasInputValue>0?'commit':''}}">发布</button> 
+  </view>

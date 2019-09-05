@@ -1,0 +1,28 @@
+.location-background-view{
+  flex-direction: row;
+  position: relative;
+  margin-left: 38rpx;
+  margin-right: 38rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  height:34rpx;
+}
+.location-checked-image {
+  width: 35rpx;
+  height: 34rpx;
+  vertical-align: middle;
+}
+
+.location-background-view text {
+  margin-left: 5rpx;
+  color: rgba(0, 0, 0, 0.9);
+  font-size: 30rpx;
+  vertical-align: middle;
+}
+
+.location-location-image {
+  margin-left: 5rpx;
+  width: 26rpx;
+  height: 32rpx;
+  vertical-align: middle;
+}
