@@ -1,0 +1,10 @@
+/**app.wxss**/
+@import './lib/style/font.wxss';
+
+.container {
+  box-sizing: border-box;
+  height: 100vh;
+  width: 100vw;
+  background-color: #f3f3f3;
+  font-size: 28rpx;
+} 
